@@ -1,0 +1,44 @@
+mesh_and_adjncy_vtu mesh-complete/mesh-complete.mesh.vtu
+set_surface_id_vtp mesh-complete/mesh-complete.exterior.vtp 1
+set_surface_id_vtp mesh-complete/mesh-surfaces/cap_aorta.vtp 2
+set_surface_id_vtp mesh-complete/mesh-surfaces/cap_aorta_2.vtp 3
+set_surface_id_vtp mesh-complete/mesh-surfaces/cap_bct.vtp 4
+set_surface_id_vtp mesh-complete/mesh-surfaces/cap_left_carotid.vtp 5
+set_surface_id_vtp mesh-complete/mesh-surfaces/cap_left_subclavian.vtp 6
+fluid_density 1.06
+fluid_viscosity 0.04
+read_pressure_velocity_vtu /home/priyanair/work/coarctations/P002/output/0d-converted-results_0d/0d.vtu
+prescribed_velocities_vtp mesh-complete/mesh-surfaces/cap_aorta.vtp
+bct_analytical_shape parabolic
+bct_period 0.8510000000000009
+bct_point_number 201
+bct_fourier_mode_number 10
+bct_flip
+bct_create mesh-complete/mesh-surfaces/cap_aorta.vtp cap_aorta.flow
+bct_write_dat bct.dat
+bct_write_vtp bct.vtp
+pressure_vtp mesh-complete/mesh-surfaces/cap_aorta_2.vtp 0
+pressure_vtp mesh-complete/mesh-surfaces/cap_bct.vtp 0
+pressure_vtp mesh-complete/mesh-surfaces/cap_left_carotid.vtp 0
+pressure_vtp mesh-complete/mesh-surfaces/cap_left_subclavian.vtp 0
+deformable_wall_vtp mesh-complete/walls_combined.vtp
+set_surface_thickness_vtp mesh-complete/mesh-surfaces/cap_aorta.vtp 0.22997214524
+set_surface_thickness_vtp mesh-complete/mesh-surfaces/cap_aorta_2.vtp 0.18113877
+set_surface_thickness_vtp mesh-complete/mesh-surfaces/cap_bct.vtp 0.12294208
+set_surface_thickness_vtp mesh-complete/mesh-surfaces/cap_left_carotid.vtp 0.05859353
+set_surface_thickness_vtp mesh-complete/mesh-surfaces/cap_left_subclavian.vtp 0.09023492
+solve_varwall_thickness
+set_surface_E_vtp mesh-complete/mesh-surfaces/cap_aorta.vtp 3000000
+set_surface_E_vtp mesh-complete/mesh-surfaces/cap_aorta_2.vtp 3000000
+set_surface_E_vtp mesh-complete/mesh-surfaces/cap_bct.vtp 3000000
+set_surface_E_vtp mesh-complete/mesh-surfaces/cap_left_carotid.vtp 3000000
+set_surface_E_vtp mesh-complete/mesh-surfaces/cap_left_subclavian.vtp 3000000
+solve_varwall_E
+varwallprop_write_vtp varwallprop.vtp
+deformable_nu 0.5
+deformable_kcons 0.833333
+deformable_pressure 71994.1
+deformable_solve_varwall_displacements
+wall_displacements_write_vtp displacement.vtp
+write_geombc geombc.dat.1
+write_restart restart.0.1

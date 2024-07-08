@@ -1,0 +1,7 @@
+name,sex,age,notes,BSA (m2),HR (bpm),CI (L/min/m2),Cuff BP (mmHg),AAo BP (mmHg),DAo BP (mmHg),PVR (WU)
+0241_H_AO_COA,Female,54,"Summary of patient data.
+BSA: Body surface area. HR: Heart rate. CI: Cardiac index.
+Cuff BP: Cuff blood pressure (systolic/diastolic).
+AAo BP: Catheter blood pressure in ascending aorta (systolic/diastolic/mean).
+DAo BP: Catheter blood pressure in descending aorta (systolic/diastolic/mean).
+PVR: Pulmonary Vascular Resistance. ",1.56,70,2.8,154/54,112/39/67,101/40/63,2.5

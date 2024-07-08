@@ -1,0 +1,46 @@
+[generate-1d-mesh] INFO - Parse arguments ...
+[generate-1d-mesh] INFO - Model order: 0
+[generate-1d-mesh] INFO - Centerlines input file: /home/priyanair/work/coarctations/P002/input/centerlines.vtp
+[generate-1d-mesh] INFO - Compute centerlines: False
+[generate-1d-mesh] INFO - Density: 1.060000
+[generate-1d-mesh] INFO - Element size: 0.100000
+[generate-1d-mesh] INFO - Inflow input file: /home/priyanair/work/coarctations/P002/outputinflow_P002.txt
+[generate-1d-mesh] INFO - Linear material parameter Er/h: 10000000.000000
+[generate-1d-mesh] INFO - Linear material parameter pressure: 0.000000
+[generate-1d-mesh] INFO - Material model: OLUFSEN
+[generate-1d-mesh] INFO - Minimum number of finite elements per segment: 50
+[generate-1d-mesh] INFO - Model name: P002
+[generate-1d-mesh] INFO - Model order: 0
+[generate-1d-mesh] INFO - Number of time steps: 8570
+[generate-1d-mesh] INFO - Outflow bc file: /home/priyanair/work/coarctations/P002/output
+[generate-1d-mesh] INFO - Outflow bc type: ['rcrt.dat']
+[generate-1d-mesh] INFO - Outlet face names file: '/home/priyanair/work/coarctations/P002/output/outlet_face_names.dat'.
+[generate-1d-mesh] INFO - Minimum number of sub-segments per master-segment: 1
+[generate-1d-mesh] INFO - Sub-segment size in vessel master-segment: 9999
+[generate-1d-mesh] INFO - Sub-segment size is adaptive: 0
+[generate-1d-mesh] INFO - Save data frequency: 20
+[generate-1d-mesh] INFO - Solver output file: solver_0d.in
+[generate-1d-mesh] INFO - Simulation time step: 0.001000
+[generate-1d-mesh] INFO - Uniform boundary conditions: False
+[generate-1d-mesh] INFO - Units: cm
+[generate-1d-mesh] INFO - Viscosity: 0.040000
+[generate-1d-mesh] INFO - Wall properties are uniform.
+[generate-1d-mesh] INFO - Read centerlines from the file: /home/priyanair/work/coarctations/P002/input/centerlines.vtp
+[generate-1d-mesh] INFO -    Number of points: 1529 
+[generate-1d-mesh] INFO -    Number of cells: 1528 
+[generate-1d-mesh] INFO -    Number of arrays: 0
+[generate-1d-mesh] INFO - Generate the 1D mesh ...
+[generate-1d-mesh] INFO - Read model outlet face names from: /home/priyanair/work/coarctations/P002/output/outlet_face_names.dat
+[generate-1d-mesh] INFO - Number of model outlet faces names: 4
+[generate-1d-mesh] INFO - Outlet face names: ['cap_bct', 'cap_left_carotid', 'cap_left_subclavian', 'cap_aorta_2']
+[generate-1d-mesh] INFO - Number of centerline branches: 5
+[generate-1d-mesh] INFO - Number of centerline bifurcations: 1
+[generate-1d-mesh] INFO - Number of svOneDSolver branches: 9
+[generate-1d-mesh] INFO - Number of svOneDSolver joints: 5
+[generate-1d-mesh] INFO - Set variable outflow boundary conditions ...
+[generate-1d-mesh] INFO - Surface cap_left_subclavian boundary condition type rcr
+[generate-1d-mesh] INFO - Surface cap_aorta_2 boundary condition type rcr
+[generate-1d-mesh] INFO - Surface cap_bct boundary condition type rcr
+[generate-1d-mesh] INFO - Surface cap_left_carotid boundary condition type rcr
+[generate-1d-mesh] INFO - Read inflow BC ...
+[generate-1d-mesh] INFO - Generated 9 segments, 26 nodes and 9 elements.

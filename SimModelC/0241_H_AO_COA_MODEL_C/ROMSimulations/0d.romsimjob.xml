@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mitk_job model_name="P002" model_order="0" mesh_name="" status="Inlet face needs to be selected" version="1.0">
+    <job>
+        <model_props />
+        <basic_props>
+            <prop key="Fluid Density" value="1.06" />
+            <prop key="Fluid Viscosity" value="0.04" />
+        </basic_props>
+        <cap_props />
+        <convert_results_props>
+            <prop key="Export NumPy" value="0" />
+            <prop key="Project Centerlines" value="0" />
+            <prop key="Project To 3D Mesh" value="1" />
+            <prop key="Simulation Name" value="pulsatile_defwall" />
+        </convert_results_props>
+        <mesh_props>
+            <prop key="Adaptive Meshing" value="0" />
+            <prop key="Number of segments per branch" value="1" />
+        </mesh_props>
+        <wall_props>
+            <prop key="Linear Material Ehr" value="1.0e7" />
+            <prop key="Linear Material Pressure" value="0.0" />
+            <prop key="Material Model" value="LINEAR" />
+        </wall_props>
+        <var_props />
+        <solver_props>
+            <prop key="Number of Timesteps" value="" />
+            <prop key="Number of Timesteps between Saving Data" value="20" />
+            <prop key="Time Step Size" value="" />
+        </solver_props>
+        <run_props />
+    </job>
+</mitk_job>
